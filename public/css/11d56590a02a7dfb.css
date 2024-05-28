@@ -14019,7 +14019,7 @@ button:focus {
 
 @font-face {
     font-family: finder-icons;
-    src: url(/fonts/finder-icons.ttf?7648j3) format("truetype"),url(/fonts/finder-icons.woff?7648j3) format("woff"),url(/fonts/finder-icons.svg?7648j3#finder-icons) format("svg");
+    /* src: url(/fonts/finder-icons.ttf?7648j3) format("truetype"),url(/fonts/finder-icons.woff?7648j3) format("woff"),url(/fonts/finder-icons.svg?7648j3#finder-icons) format("svg"); */
     font-weight: 400;
     font-style: normal;
     font-display: block
