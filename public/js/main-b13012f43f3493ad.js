@@ -490,7 +490,7 @@
                 value: {
                     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
                     imageSizes: [48, 64, 88, 96, 128, 256, 384, 416],
-                    path: "/_next/image",
+                    path: "",
                     loader: "default",
                     dangerouslyAllowSVG: !1,
                     unoptimized: !1
@@ -1156,34 +1156,34 @@
                     }
                     )
                 },
-                loadRoute(r, n) {
-                    return o(r, i, ()=>{
-                        let a;
-                        return u(d(e, r).then(e=>{
-                            let {scripts: n, css: a} = e;
-                            return Promise.all([t.has(r) ? [] : Promise.all(n.map(c)), Promise.all(a.map(f))])
-                        }
-                        ).then(e=>this.whenEntrypoint(r).then(t=>({
-                            entrypoint: t,
-                            styles: e[1]
-                        }))), 3800, l(Error("Route did not complete loading: ".concat(r)))).then(e=>{
-                            let {entrypoint: t, styles: r} = e
-                              , n = Object.assign({
-                                styles: r
-                            }, t);
-                            return "error"in t ? t : n
-                        }
-                        ).catch(e=>{
-                            if (n)
-                                throw e;
-                            return {
-                                error: e
-                            }
-                        }
-                        ).finally(()=>null == a ? void 0 : a())
-                    }
-                    )
-                },
+                // loadRoute(r, n) {
+                //     return o(r, i, ()=>{
+                //         let a;
+                //         return u(d(e, r).then(e=>{
+                //             let {scripts: n, css: a} = e;
+                //             return Promise.all([t.has(r) ? [] : Promise.all(n.map(c)), Promise.all(a.map(f))])
+                //         }
+                //         ).then(e=>this.whenEntrypoint(r).then(t=>({
+                //             entrypoint: t,
+                //             styles: e[1]
+                //         }))), 3800, l(Error("Route did not complete loading: ".concat(r)))).then(e=>{
+                //             let {entrypoint: t, styles: r} = e
+                //               , n = Object.assign({
+                //                 styles: r
+                //             }, t);
+                //             return "error"in t ? t : n
+                //         }
+                //         ).catch(e=>{
+                //             if (n)
+                //                 throw e;
+                //             return {
+                //                 error: e
+                //             }
+                //         }
+                //         ).finally(()=>null == a ? void 0 : a())
+                //     }
+                //     )
+                // },
                 prefetch(t) {
                     let r;
                     return (r = navigator.connection) && (r.saveData || /2g/.test(r.effectiveType)) ? Promise.resolve() : d(e, t).then(e=>Promise.all(s ? e.scripts.map(e=>{
@@ -1963,7 +1963,7 @@
         t.imageConfigDefault = {
             deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
             imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-            path: "/_next/image",
+            path: "",
             loader: "default",
             loaderFile: "",
             domains: [],
