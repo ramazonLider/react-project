@@ -55,7 +55,7 @@ function App() {
               </button>
               <a
                 role="button"
-                tabindex="0"
+                tabIndex="0"
                 className="order-lg-3 ms-2 btn btn-primary btn-sm"
                 href="/car-finder/sell-car"
               >
@@ -73,7 +73,7 @@ function App() {
                       aria-expanded="false"
                       role="button"
                       className="align-items-center pe-lg-4 dropdown-toggle nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       <i className="fi-layers me-2"></i>
@@ -164,7 +164,7 @@ function App() {
                       aria-expanded="false"
                       role="button"
                       className="dropdown-toggle nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       Catalog
@@ -202,7 +202,7 @@ function App() {
                       aria-expanded="false"
                       role="button"
                       className="dropdown-toggle nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       Account
@@ -275,7 +275,7 @@ function App() {
                       aria-expanded="false"
                       role="button"
                       className="dropdown-toggle nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       Vendor
@@ -313,7 +313,7 @@ function App() {
                       aria-expanded="false"
                       role="button"
                       className="dropdown-toggle nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       Pages
@@ -336,7 +336,7 @@ function App() {
                           data-rr-ui-dropdown-item=""
                           className="dropdown-toggle dropdown-item"
                           role="button"
-                          tabindex="0"
+                          tabIndex="0"
                           href="#"
                         >
                           Blog
@@ -385,7 +385,7 @@ function App() {
                     </div>
                   </div>
                   <div className="d-lg-none nav-item">
-                    <a role="button" className="nav-link" tabindex="0" href="#">
+                    <a role="button" className="nav-link" tabIndex="0" href="#">
                       <i className="fi-user me-2"></i>
                       Sign in
                     </a>
@@ -451,7 +451,7 @@ function App() {
                     role="button"
                     data-rr-ui-event-key="new"
                     className="nav-link active"
-                    tabindex="0"
+                    tabIndex="0"
                     href="#"
                   >
                     New
@@ -462,7 +462,7 @@ function App() {
                     role="button"
                     data-rr-ui-event-key="used"
                     className="nav-link"
-                    tabindex="0"
+                    tabIndex="0"
                     href="#"
                   >
                     Used
@@ -558,7 +558,7 @@ function App() {
               <h2 className="h3 text-light mb-2 mb-sm-0">Popular car body types</h2>
               <a
                 role="button"
-                tabindex="0"
+                tabIndex="0"
                 className="btn btn-link btn-light fw-normal px-0"
                 href="/car-finder/catalog?view=grid"
               >
@@ -993,7 +993,7 @@ function App() {
               <h2 className="h3 text-light mb-2 mb-sm-0">Top offers</h2>
               <a
                 role="button"
-                tabindex="0"
+                tabIndex="0"
                 className="btn btn-link btn-light fw-normal px-0"
                 href="/car-finder/catalog?view=list"
               >
@@ -2006,7 +2006,7 @@ function App() {
               </h2>
               <a
                 role="button"
-                tabindex="0"
+                tabIndex="0"
                 className="btn btn-link btn-light fw-normal px-0"
                 href="/car-finder#"
               >
@@ -2098,10 +2098,10 @@ function App() {
                     >
                       <path
                         fill="#fff"
-                        fill-opacity=".16"
+                        fillOpacity=".16"
                         d="M2,335.1V354H0l0-18.9H2z M2,368.6v18.9H0l0-18.9H2z M2,402.1v18.9H0l0-18.9H2z M2,435.7v18.9H0l0-18.9H2z M2,469.2v18.9H0l0-18.9H2z M2,502.8v18.9H0l0-18.9H2z M2,536.3v18.9H0l0-18.9H2z M2,569.9v18.9H0l0-18.9H2z M2,603.4l0,18.9H0l0-18.9H2z M2,637v9.5v9.5H0L0,637H2z"
                       ></path>
-                      <g fill-opacity=".16">
+                      <g fillOpacity=".16">
                         <path fill="#fff" d="M2,18.9H0L0,0h2V18.9z"></path>
                         <path fill="#fff" d="M2,52.5H0l0-18.9h2V52.5z"></path>
                         <path fill="#fff" d="M2,86H0l0-18.9h2V86z"></path>
@@ -2168,7 +2168,7 @@ function App() {
                       role="button"
                       data-rr-ui-event-key="new"
                       className="nav-link"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       New
@@ -2179,7 +2179,7 @@ function App() {
                       role="button"
                       data-rr-ui-event-key="used"
                       className="nav-link active"
-                      tabindex="0"
+                      tabIndex="0"
                       href="#"
                     >
                       Used
@@ -2188,7 +2188,7 @@ function App() {
                 </div>
                 <a
                   role="button"
-                  tabindex="0"
+                  tabIndex="0"
                   className="btn btn-link btn-light fw-normal px-0"
                   href="/car-finder/catalog?view=grid"
                 >
