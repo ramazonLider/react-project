@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -62,7 +61,10 @@ function App() {
                 <i className="fi-plus me-2"></i>
                 Sell car
               </a>
-              <div className="order-md-2 navbar-collapse collapse" id="navbarNav">
+              <div
+                className="order-md-2 navbar-collapse collapse"
+                id="navbarNav"
+              >
                 <div
                   className="navbar-nav navbar-nav-scroll"
                   style="max-height:35rem"
@@ -555,14 +557,17 @@ function App() {
           </section>
           <section className="pb-5 mb-md-4 container">
             <div className="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-sm-2">
-              <h2 className="h3 text-light mb-2 mb-sm-0">Popular car body types</h2>
+              <h2 className="h3 text-light mb-2 mb-sm-0">
+                Popular car body types
+              </h2>
               <a
                 role="button"
                 tabIndex="0"
                 className="btn btn-link btn-light fw-normal px-0"
                 href="/car-finder/catalog?view=grid"
               >
-                View all<i className="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i>
+                View all
+                <i className="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i>
               </a>
             </div>
             <div className="g-2 g-md-4 row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
@@ -2019,7 +2024,9 @@ function App() {
                 <div className="d-flex pb-4 pb-md-5 mb-2">
                   <i className="fi-file lead text-primary mt-1 order-md-2"></i>
                   <div className="text-md-end ps-3 ps-md-0 pe-md-3 order-md-1">
-                    <h3 className="h6 text-light mb-1">Over 1 Million Listings</h3>
+                    <h3 className="h6 text-light mb-1">
+                      Over 1 Million Listings
+                    </h3>
                     <p className="fs-sm text-light opacity-70 mb-0">
                       That &#x27;s more than you &#x27;ll find on any other
                       major online automotive marketplace in the USA.
@@ -2137,7 +2144,9 @@ function App() {
                 <div className="d-flex pb-4 pb-md-5 mb-2">
                   <i className="fi-users lead text-primary mt-1"></i>
                   <div className="ps-3">
-                    <h3 className="h6 text-light mb-1">Consumer-First Mentality</h3>
+                    <h3 className="h6 text-light mb-1">
+                      Consumer-First Mentality
+                    </h3>
                     <p className="fs-sm text-light opacity-70 mb-0">
                       We focus on building the most transparent, trustworthy
                       experience for our users, and we &#x27;ve proven that
@@ -2212,13 +2221,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2018</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Mercedes Benz C300 Sport
                           </a>
                         </h3>
@@ -2256,7 +2271,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide h-auto" data-swiper-slide-index="0">
+                  <div
+                    className="swiper-slide h-auto"
+                    data-swiper-slide-index="0"
+                  >
                     <div className="card card-light card-hover h-100">
                       <template id="B:1"></template>
 
@@ -2265,13 +2283,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2019</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Nissan 370Z Nismo
                           </a>
                         </h3>
@@ -2309,7 +2333,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide h-auto" data-swiper-slide-index="1">
+                  <div
+                    className="swiper-slide h-auto"
+                    data-swiper-slide-index="1"
+                  >
                     <div className="card card-light card-hover h-100">
                       <template id="B:2"></template>
 
@@ -2318,13 +2345,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2017</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Ford Explorer XLT
                           </a>
                         </h3>
@@ -2362,7 +2395,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide h-auto" data-swiper-slide-index="2">
+                  <div
+                    className="swiper-slide h-auto"
+                    data-swiper-slide-index="2"
+                  >
                     <div className="card card-light card-hover h-100">
                       <template id="B:3"></template>
 
@@ -2371,13 +2407,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2019</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Mazda MX-5 Miata Convertible
                           </a>
                         </h3>
@@ -2415,7 +2457,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide h-auto" data-swiper-slide-index="3">
+                  <div
+                    className="swiper-slide h-auto"
+                    data-swiper-slide-index="3"
+                  >
                     <div className="card card-light card-hover h-100">
                       <template id="B:4"></template>
 
@@ -2424,13 +2469,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2018</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Mercedes Benz C300 Sport
                           </a>
                         </h3>
@@ -2479,13 +2530,19 @@ function App() {
                           <span className="fs-sm text-light me-3">2019</span>
                           <div className="form-check form-check-light">
                             <label className="form-check-label">
-                              <input type="checkbox" className="form-check-input" />
+                              <input
+                                type="checkbox"
+                                className="form-check-input"
+                              />
                               <span className="fs-sm">Compare</span>
                             </label>
                           </div>
                         </div>
                         <h3 className="h6 mb-1">
-                          <a className="nav-link-light" href="/car-finder/single">
+                          <a
+                            className="nav-link-light"
+                            href="/car-finder/single"
+                          >
                             Nissan 370Z Nismo
                           </a>
                         </h3>
@@ -2594,7 +2651,9 @@ function App() {
           <div className="pt-4 pb-3 pt-lg-5 pb-lg-4 container">
             <div className="row pt-2 pt-lg-0 row">
               <div className="pb-2 mb-4 col-lg-3">
-                <h3 className="h5 text-light mb-2">Subscribe to our newsletter</h3>
+                <h3 className="h5 text-light mb-2">
+                  Subscribe to our newsletter
+                </h3>
                 <p className="fs-sm text-light opacity-70">
                   Don &#x27;t miss any relevant offers!
                 </p>
@@ -2605,7 +2664,10 @@ function App() {
                     </span>
                     <input placeholder="Your email" className="form-control" />
                   </div>
-                  <button type="button" className="btn btn-primary btn-icon btn-sm">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-icon btn-sm"
+                  >
                     <i className="fi-send"></i>
                   </button>
                 </form>
@@ -2749,13 +2811,22 @@ function App() {
           </div>
           <div className="d-lg-flex align-items-center justify-content-between fs-sm pb-3 container">
             <div className="d-flex flex-wrap justify-content-center order-lg-2 mb-3">
-              <a className="nav-link-light fw-normal nav-link" href="/car-finder#">
+              <a
+                className="nav-link-light fw-normal nav-link"
+                href="/car-finder#"
+              >
                 Terms of use
               </a>
-              <a className="nav-link-light fw-normal nav-link" href="/car-finder#">
+              <a
+                className="nav-link-light fw-normal nav-link"
+                href="/car-finder#"
+              >
                 Privacy policy
               </a>
-              <a className="nav-link-light fw-normal nav-link" href="/car-finder#">
+              <a
+                className="nav-link-light fw-normal nav-link"
+                href="/car-finder#"
+              >
                 Accessibility statement
               </a>
               <a
@@ -2781,7 +2852,9 @@ function App() {
           </div>
         </footer>
         <button type="btton" className="btn-scroll-top">
-          <span className="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+          <span className="btn-scroll-top-tooltip text-muted fs-sm me-2">
+            Top
+          </span>
           <i className="btn-scroll-top-icon fi-chevron-up"></i>
         </button>
       </div>
