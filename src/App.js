@@ -7,7 +7,7 @@ function App() {
       <div id="__next">
         <button
           type="button"
-          style="z-index:1035"
+          style={{ zIndex: 1035 }}
           className="btn btn-light btn-icon rounded-circle shadow position-fixed top-50 end-0 translate-middle-y me-3"
         >
           <i className="fi-layers"></i>
