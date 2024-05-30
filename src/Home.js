@@ -3276,10 +3276,48 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
@@ -3290,7 +3328,29 @@ function Home() {
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
@@ -3299,7 +3359,24 @@ function Home() {
                         src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3311,30 +3388,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Audi"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Audi"
-                        srcSet="/images/car-finder/brands/audi.svg 1x, /images/car-finder/brands/audi.svg 2x"
-                        src="/images/car-finder/brands/audi.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3346,30 +3500,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Mercedes-Benz"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Mercedes-Benz"
-                        srcSet="/images/car-finder/brands/mercedes.svg 1x, /images/car-finder/brands/mercedes.svg 2x"
-                        src="/images/car-finder/brands/mercedes.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3381,30 +3612,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Toyota"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Toyota"
-                        srcSet="/images/car-finder/brands/toyota.svg 1x, /images/car-finder/brands/toyota.svg 2x"
-                        src="/images/car-finder/brands/toyota.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3416,30 +3724,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Mazda"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Mazda"
-                        srcSet="/images/car-finder/brands/mazda.svg 1x, /images/car-finder/brands/mazda.svg 2x"
-                        src="/images/car-finder/brands/mazda.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3451,30 +3836,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Nissan"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Nissan"
-                        srcSet="/images/car-finder/brands/nissan.svg 1x, /images/car-finder/brands/nissan.svg 2x"
-                        src="/images/car-finder/brands/nissan.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3486,30 +3948,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Hyundai"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Hyundai"
-                        srcSet="/images/car-finder/brands/hyundai.svg 1x, /images/car-finder/brands/hyundai.svg 2x"
-                        src="/images/car-finder/brands/hyundai.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3521,30 +4060,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Lexus"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Lexus"
-                        srcSet="/images/car-finder/brands/lexus.svg 1x, /images/car-finder/brands/lexus.svg 2x"
-                        src="/images/car-finder/brands/lexus.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3556,30 +4172,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Honda"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Honda"
-                        srcSet="/images/car-finder/brands/honda.svg 1x, /images/car-finder/brands/honda.svg 2x"
-                        src="/images/car-finder/brands/honda.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3591,30 +4284,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Renault"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Renault"
-                        srcSet="/images/car-finder/brands/renault.svg 1x, /images/car-finder/brands/renault.svg 2x"
-                        src="/images/car-finder/brands/renault.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3626,30 +4396,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Infiniti"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Infiniti"
-                        srcSet="/images/car-finder/brands/infiniti.svg 1x, /images/car-finder/brands/infiniti.svg 2x"
-                        src="/images/car-finder/brands/infiniti.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3661,30 +4508,107 @@ function Home() {
                   className="d-flex justify-content-center opacity-40 opacity-transition"
                   href="/car-finder#"
                 >
-                  <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "inline-block",
+                      overflow: "hidden",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      position: "relative",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "block",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        maxWidth: "100%",
+                      }}
+                    >
                       <img
-                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                        style={{
+                          display: "block",
+                          maxWidth: "100%",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                        }}
                         alt=""
                         aria-hidden="true"
                         src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2786%27%20height=%2748%27/%3e"
                       />
                     </span>
                     <img
-                      alt="Mitsubishi"
+                      alt="Opel"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       decoding="async"
                       data-nimg="intrinsic"
-                      style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                        backgroundSize: "cover",
+                        backgroundPosition: "0% 0%",
+                        filter: "blur(20px)",
+                        backgroundImage:
+                          'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIj4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNlZmVkZjAiIG9mZnNldD0iMjAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZDdkYSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWZlZGYwIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0iI2VmZWRmMCIgLz4KICAgICAgPHJlY3QgaWQ9InIiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04NiIgdG89Ijg2IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                      }}
                     />
                     <noscript>
                       <img
-                        alt="Mitsubishi"
-                        srcSet="/images/car-finder/brands/mitsubishi.svg 1x, /images/car-finder/brands/mitsubishi.svg 2x"
-                        src="/images/car-finder/brands/mitsubishi.svg"
+                        alt="Opel"
+                        srcSet="/images/car-finder/brands/opel.svg 1x, /images/car-finder/brands/opel.svg 2x"
+                        src="/images/car-finder/brands/opel.svg"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                        }}
                         loading="lazy"
                       />
                     </noscript>
@@ -3748,13 +4672,51 @@ function Home() {
                 <div
                   id="wrapper"
                   className="position-relative mx-auto"
-                  style="max-width:5rem;min-height:26rem"
+                  style={{ maxWidth: "5rem", minHeight: "26rem" }}
                 >
                   <div className="content-overlay mt-5 pt-5">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%27177%27/%3e"
@@ -3766,7 +4728,29 @@ function Home() {
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMTc3IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjgwIiBoZWlnaHQ9IjE3NyIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04MCIgdG89IjgwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMTc3IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjgwIiBoZWlnaHQ9IjE3NyIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04MCIgdG89IjgwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                        }}
                       />
                       <noscript>
                         <img
@@ -3776,7 +4760,24 @@ function Home() {
                           src="/images/car-finder/home/car.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -4292,23 +5293,112 @@ function Home() {
           <div className="border-bottom border-light py-4">
             <div className="d-sm-flex align-items-center justify-content-between container">
               <a className="d-inline-flex" href="/car-finder">
-                <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                  <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                <span
+                  style={{
+                    boxSizing: "border-box",
+                    display: "inline-block",
+                    overflow: "hidden",
+                    width: "initial",
+                    height: "initial",
+                    background: "none",
+                    opacity: 1,
+                    border: 0,
+                    margin: 0,
+                    padding: 0,
+                    position: "relative",
+                    maxWidth: "100%",
+                  }}
+                >
+                  <span
+                    style={{
+                      boxSizing: "border-box",
+                      display: "block",
+                      width: "initial",
+                      height: "initial",
+                      background: "none",
+                      opacity: 1,
+                      border: 0,
+                      margin: 0,
+                      padding: 0,
+                      maxWidth: "100%",
+                    }}
+                  >
                     <img
-                      style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                      style={{
+                        display: "block",
+                        maxWidth: "100%",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                      }}
                       alt=""
                       aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27116%27%20height=%2732%27/%3e"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%27177%27/%3e"
                     />
                   </span>
                   <img
-                    alt="Finder"
-                    srcSet="/images/logo/logo-light.svg 1x, /images/logo/logo-light.svg 2x"
-                    src="/images/logo/logo-light.svg"
+                    light="true"
+                    alt="Car image"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     decoding="async"
                     data-nimg="intrinsic"
-                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      bottom: 0,
+                      right: 0,
+                      boxSizing: "border-box",
+                      padding: 0,
+                      border: "none",
+                      margin: "auto",
+                      display: "block",
+                      width: 0,
+                      height: 0,
+                      minWidth: "100%",
+                      maxWidth: "100%",
+                      minHeight: "100%",
+                      maxHeight: "100%",
+                      backgroundSize: "cover",
+                      backgroundPosition: "0% 0%",
+                      filter: "blur(20px)",
+                      backgroundImage:
+                        'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMTc3IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjgwIiBoZWlnaHQ9IjE3NyIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04MCIgdG89IjgwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+                    }}
                   />
+                  <noscript>
+                    <img
+                      light="true"
+                      alt="Car image"
+                      srcSet="/images/car-finder/home/car.svg 1x, /images/car-finder/home/car.svg 2x"
+                      src="/images/car-finder/home/car.svg"
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        boxSizing: "border-box",
+                        padding: 0,
+                        border: "none",
+                        margin: "auto",
+                        display: "block",
+                        width: 0,
+                        height: 0,
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                        minHeight: "100%",
+                        maxHeight: "100%",
+                      }}
+                      loading="lazy"
+                    />
+                  </noscript>
                 </span>
               </a>
               <div className="d-flex pt-3 pt-sm-0">
@@ -4549,36 +5639,114 @@ function Home() {
       </div>
       <div hidden id="S:0">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%27177%27/%3e"
               />
             </span>
             <img
-              alt="Image"
-              light="1"
+              light="true"
+              alt="Car image"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMTc3IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjgwIiBoZWlnaHQ9IjE3NyIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii04MCIgdG89IjgwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvc3ZnPg==")',
+              }}
             />
             <noscript>
               <img
-                alt="Image"
-                light="1"
-                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=1080&amp;q=75 2x"
-                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=1080&amp;q=75"
+                light="true"
+                alt="Car image"
+                srcSet="/images/car-finder/home/car.svg 1x, /images/car-finder/home/car.svg 2x"
+                src="/images/car-finder/home/car.svg"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
@@ -4595,10 +5763,48 @@ function Home() {
       </div>
       <div hidden id="S:1">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
@@ -4610,7 +5816,29 @@ function Home() {
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+              }}
             />
             <noscript>
               <img
@@ -4620,11 +5848,29 @@ function Home() {
                 src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
@@ -4641,10 +5887,48 @@ function Home() {
       </div>
       <div hidden id="S:2">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
@@ -4656,21 +5940,61 @@ function Home() {
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+              }}
             />
             <noscript>
               <img
                 alt="Image"
                 light="1"
-                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F08.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F08.jpg&amp;w=1080&amp;q=75 2x"
-                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F08.jpg&amp;w=1080&amp;q=75"
+                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75 2x"
+                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
@@ -4688,10 +6012,48 @@ function Home() {
       </div>
       <div hidden id="S:3">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
@@ -4703,21 +6065,61 @@ function Home() {
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+              }}
             />
             <noscript>
               <img
                 alt="Image"
                 light="1"
-                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F03.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F03.jpg&amp;w=1080&amp;q=75 2x"
-                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F03.jpg&amp;w=1080&amp;q=75"
+                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75 2x"
+                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
@@ -4734,10 +6136,48 @@ function Home() {
       </div>
       <div hidden id="S:4">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
@@ -4749,21 +6189,61 @@ function Home() {
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+              }}
             />
             <noscript>
               <img
                 alt="Image"
                 light="1"
-                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=1080&amp;q=75 2x"
-                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F02.jpg&amp;w=1080&amp;q=75"
+                srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75 2x"
+                src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
@@ -4780,10 +6260,48 @@ function Home() {
       </div>
       <div hidden id="S:5">
         <div className="card-img-top card-img-hover d-flex">
-          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+          <span
+            style={{
+              boxSizing: "border-box",
+              display: "inline-block",
+              overflow: "hidden",
+              width: "initial",
+              height: "initial",
+              background: "none",
+              opacity: 1,
+              border: 0,
+              margin: 0,
+              padding: 0,
+              position: "relative",
+              maxWidth: "100%",
+            }}
+          >
+            <span
+              style={{
+                boxSizing: "border-box",
+                display: "block",
+                width: "initial",
+                height: "initial",
+                background: "none",
+                opacity: 1,
+                border: 0,
+                margin: 0,
+                padding: 0,
+                maxWidth: "100%",
+              }}
+            >
               <img
-                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "initial",
+                  height: "initial",
+                  background: "none",
+                  opacity: 1,
+                  border: 0,
+                  margin: 0,
+                  padding: 0,
+                }}
                 alt=""
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27473%27%20height=%27242%27/%3e"
@@ -4795,7 +6313,29 @@ function Home() {
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               decoding="async"
               data-nimg="intrinsic"
-              style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                boxSizing: "border-box",
+                padding: 0,
+                border: "none",
+                margin: "auto",
+                display: "block",
+                width: 0,
+                height: 0,
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                backgroundSize: "cover",
+                backgroundPosition: "0% 0%",
+                filter: "blur(20px)",
+                backgroundImage:
+                  'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI0NzMiIGhlaWdodD0iMjQyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjQ3MyIgaGVpZ2h0PSIyNDIiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNDczIiBoZWlnaHQ9IjI0MiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii00NzMiIHRvPSI0NzMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+              }}
             />
             <noscript>
               <img
@@ -4805,11 +6345,29 @@ function Home() {
                 src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F04.jpg&amp;w=1080&amp;q=75"
                 decoding="async"
                 data-nimg="intrinsic"
-                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  right: 0,
+                  boxSizing: "border-box",
+                  padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: 0,
+                  height: 0,
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
+                }}
                 loading="lazy"
               />
             </noscript>
           </span>
+
           <a className="img-overlay" href="/car-finder/single"></a>
           <div className="position-absolute start-0 top-0 pt-3 ps-3">
             <span className="d-table badge bg-info mb-1">Used</span>
