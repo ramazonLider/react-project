@@ -71,7 +71,24 @@ function Home() {
                     src="/images/logo/logo-light.svg"
                     decoding="async"
                     data-nimg="intrinsic"
-                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      bottom: 0,
+                      right: 0,
+                      boxSizing: "border-box",
+                      padding: 0,
+                      border: "none",
+                      margin: "auto",
+                      display: "block",
+                      width: 0,
+                      height: 0,
+                      minWidth: "100%",
+                      maxWidth: "100%",
+                      minHeight: "100%",
+                      maxHeight: "100%",
+                    }}
                   />
                 </span>
               </a>
@@ -436,7 +453,10 @@ function Home() {
           </header>
           <section
             className="bg-top-center bg-repeat-0 pt-5"
-            style="background-image:url(/frontend/public/hero-img.png);background-size:1920px 630px"
+            style={{
+              backgroundImage: "url(/frontend/public/hero-img.png)",
+              backgroundSize: "1920px 630px",
+            }}
           >
             <div className="pt-5 container">
               <div className="pt-lg-4 pt-xl-5 row">
@@ -450,9 +470,40 @@ function Home() {
                   </p>
                 </div>
                 <div className="pt-md-5 col-lg-8 col-md-7">
-                  <div className="d-flex mt-4 ms-auto" style="max-width:800px">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                  <div
+                    className="d-flex mt-4 ms-auto"
+                    style={{ maxWidth: "800px" }}
+                  >
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
                           style={{
                             display: "block",
@@ -1137,10 +1188,48 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
@@ -1152,8 +1241,31 @@ function Home() {
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
+
                       <noscript>
                         <img
                           alt="Coupe"
@@ -1162,7 +1274,24 @@ function Home() {
                           src="/images/car-finder/icons/coupe.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1179,10 +1308,48 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
@@ -1194,7 +1361,29 @@ function Home() {
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
                       <noscript>
                         <img
@@ -1204,7 +1393,24 @@ function Home() {
                           src="/images/car-finder/icons/pickup.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1221,10 +1427,48 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
@@ -1236,7 +1480,29 @@ function Home() {
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
                       <noscript>
                         <img
@@ -1246,7 +1512,24 @@ function Home() {
                           src="/images/car-finder/icons/sport.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1263,32 +1546,109 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
                         />
                       </span>
                       <img
-                        alt="Compact"
+                        alt="Sport Coupe"
                         light="true"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
                       <noscript>
                         <img
-                          alt="Compact"
+                          alt="Sport Coupe"
                           light="true"
-                          srcSet="/images/car-finder/icons/compact.svg 1x, /images/car-finder/icons/compact.svg 2x"
-                          src="/images/car-finder/icons/compact.svg"
+                          srcSet="/images/car-finder/icons/sport.svg 1x, /images/car-finder/icons/sport.svg 2x"
+                          src="/images/car-finder/icons/sport.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1305,32 +1665,109 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
                         />
                       </span>
                       <img
-                        alt="Convertible"
+                        alt="Sport Coupe"
                         light="true"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
                       <noscript>
                         <img
-                          alt="Convertible"
+                          alt="Sport Coupe"
                           light="true"
-                          srcSet="/images/car-finder/icons/convertible.svg 1x, /images/car-finder/icons/convertible.svg 2x"
-                          src="/images/car-finder/icons/convertible.svg"
+                          srcSet="/images/car-finder/icons/sport.svg 1x, /images/car-finder/icons/sport.svg 2x"
+                          src="/images/car-finder/icons/sport.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1347,32 +1784,109 @@ function Home() {
               <div className="col">
                 <div className="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center">
                   <div className="d-flex justify-content-center mb-3">
-                    <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                      <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                    <span
+                      style={{
+                        boxSizing: "border-box",
+                        display: "inline-block",
+                        overflow: "hidden",
+                        width: "initial",
+                        height: "initial",
+                        background: "none",
+                        opacity: 1,
+                        border: 0,
+                        margin: 0,
+                        padding: 0,
+                        position: "relative",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          boxSizing: "border-box",
+                          display: "block",
+                          width: "initial",
+                          height: "initial",
+                          background: "none",
+                          opacity: 1,
+                          border: 0,
+                          margin: 0,
+                          padding: 0,
+                          maxWidth: "100%",
+                        }}
+                      >
                         <img
-                          style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                          style={{
+                            display: "block",
+                            maxWidth: "100%",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                          }}
                           alt=""
                           aria-hidden="true"
                           src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2796%27/%3e"
                         />
                       </span>
                       <img
-                        alt="Family MPV"
+                        alt="Sport Coupe"
                         light="true"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         decoding="async"
                         data-nimg="intrinsic"
-                        style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          boxSizing: "border-box",
+                          padding: 0,
+                          border: "none",
+                          margin: "auto",
+                          display: "block",
+                          width: 0,
+                          height: 0,
+                          minWidth: "100%",
+                          maxWidth: "100%",
+                          minHeight: "100%",
+                          maxHeight: "100%",
+                          backgroundSize: "cover",
+                          backgroundPosition: "0% 0%",
+                          filter: "blur(20px)",
+                          backgroundImage:
+                            'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSIxNjAiIGhlaWdodD0iOTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyI+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzUyZTQ0IiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxZjFiMmQiIG9mZnNldD0iNTAlIiAvPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijk2IiBmaWxsPSIjMzUyZTQ0IiAvPgogICAgICA8cmVjdCBpZD0iciIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5NiIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNjAiIHRvPSIxNjAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                        }}
                       />
                       <noscript>
                         <img
-                          alt="Family MPV"
+                          alt="Sport Coupe"
                           light="true"
-                          srcSet="/images/car-finder/icons/mpv.svg 1x, /images/car-finder/icons/mpv.svg 2x"
-                          src="/images/car-finder/icons/mpv.svg"
+                          srcSet="/images/car-finder/icons/sport.svg 1x, /images/car-finder/icons/sport.svg 2x"
+                          src="/images/car-finder/icons/sport.svg"
                           decoding="async"
                           data-nimg="intrinsic"
-                          style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            boxSizing: "border-box",
+                            padding: 0,
+                            border: "none",
+                            margin: "auto",
+                            display: "block",
+                            width: 0,
+                            height: 0,
+                            minWidth: "100%",
+                            maxWidth: "100%",
+                            minHeight: "100%",
+                            maxHeight: "100%",
+                          }}
                           loading="lazy"
                         />
                       </noscript>
@@ -1410,10 +1924,48 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                          <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "inline-block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "relative",
+                            maxWidth: "100%",
+                          }}
+                        >
+                          <span
+                            style={{
+                              boxSizing: "border-box",
+                              display: "block",
+                              width: "initial",
+                              height: "initial",
+                              background: "none",
+                              opacity: 1,
+                              border: 0,
+                              margin: 0,
+                              padding: 0,
+                              maxWidth: "100%",
+                            }}
+                          >
                             <img
-                              style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                              style={{
+                                display: "block",
+                                maxWidth: "100%",
+                                width: "initial",
+                                height: "initial",
+                                background: "none",
+                                opacity: 1,
+                                border: 0,
+                                margin: 0,
+                                padding: 0,
+                              }}
                               alt=""
                               aria-hidden="true"
                               src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27965%27%20height=%27400%27/%3e"
@@ -1425,7 +1977,29 @@ function Home() {
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="intrinsic"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1435,7 +2009,24 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F17.jpg&amp;w=2048&amp;q=75"
                               decoding="async"
                               data-nimg="intrinsic"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1445,10 +2036,48 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                          <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "inline-block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "relative",
+                            maxWidth: "100%",
+                          }}
+                        >
+                          <span
+                            style={{
+                              boxSizing: "border-box",
+                              display: "block",
+                              width: "initial",
+                              height: "initial",
+                              background: "none",
+                              opacity: 1,
+                              border: 0,
+                              margin: 0,
+                              padding: 0,
+                              maxWidth: "100%",
+                            }}
+                          >
                             <img
-                              style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                              style={{
+                                display: "block",
+                                maxWidth: "100%",
+                                width: "initial",
+                                height: "initial",
+                                background: "none",
+                                opacity: 1,
+                                border: 0,
+                                margin: 0,
+                                padding: 0,
+                              }}
                               alt=""
                               aria-hidden="true"
                               src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27965%27%20height=%27400%27/%3e"
@@ -1460,7 +2089,29 @@ function Home() {
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="intrinsic"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1470,7 +2121,24 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F17.jpg&amp;w=2048&amp;q=75"
                               decoding="async"
                               data-nimg="intrinsic"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1480,10 +2148,48 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                          <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "inline-block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "relative",
+                            maxWidth: "100%",
+                          }}
+                        >
+                          <span
+                            style={{
+                              boxSizing: "border-box",
+                              display: "block",
+                              width: "initial",
+                              height: "initial",
+                              background: "none",
+                              opacity: 1,
+                              border: 0,
+                              margin: 0,
+                              padding: 0,
+                              maxWidth: "100%",
+                            }}
+                          >
                             <img
-                              style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                              style={{
+                                display: "block",
+                                maxWidth: "100%",
+                                width: "initial",
+                                height: "initial",
+                                background: "none",
+                                opacity: 1,
+                                border: 0,
+                                margin: 0,
+                                padding: 0,
+                              }}
                               alt=""
                               aria-hidden="true"
                               src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27965%27%20height=%27400%27/%3e"
@@ -1495,7 +2201,29 @@ function Home() {
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="intrinsic"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1505,7 +2233,24 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F17.jpg&amp;w=2048&amp;q=75"
                               decoding="async"
                               data-nimg="intrinsic"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1515,10 +2260,48 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
-                          <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "inline-block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "relative",
+                            maxWidth: "100%",
+                          }}
+                        >
+                          <span
+                            style={{
+                              boxSizing: "border-box",
+                              display: "block",
+                              width: "initial",
+                              height: "initial",
+                              background: "none",
+                              opacity: 1,
+                              border: 0,
+                              margin: 0,
+                              padding: 0,
+                              maxWidth: "100%",
+                            }}
+                          >
                             <img
-                              style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                              style={{
+                                display: "block",
+                                maxWidth: "100%",
+                                width: "initial",
+                                height: "initial",
+                                background: "none",
+                                opacity: 1,
+                                border: 0,
+                                margin: 0,
+                                padding: 0,
+                              }}
                               alt=""
                               aria-hidden="true"
                               src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27965%27%20height=%27400%27/%3e"
@@ -1530,7 +2313,29 @@ function Home() {
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="intrinsic"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSI5NjUiIGhlaWdodD0iNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9Ijk2NSIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iOTY1IiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii05NjUiIHRvPSI5NjUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1540,7 +2345,24 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F17.jpg&amp;w=2048&amp;q=75"
                               decoding="async"
                               data-nimg="intrinsic"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1623,14 +2445,55 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1641,7 +2504,25 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1651,14 +2532,55 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1669,7 +2591,25 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1679,14 +2619,55 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1697,7 +2678,25 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1707,14 +2706,55 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
@@ -1725,7 +2765,25 @@ function Home() {
                               src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1801,25 +2859,84 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
                               alt="Image"
                               light="1"
                               sizes="100vw"
-                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100 3840w"
-                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100"
+                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100 3840w"
+                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1829,25 +2946,84 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
                               alt="Image"
                               light="1"
                               sizes="100vw"
-                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100 3840w"
-                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100"
+                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100 3840w"
+                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1857,25 +3033,84 @@ function Home() {
                         className="swiper-slide d-flex"
                         data-swiper-slide-index="1"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
                               alt="Image"
                               light="1"
                               sizes="100vw"
-                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100 3840w"
-                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100"
+                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100 3840w"
+                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
@@ -1885,25 +3120,84 @@ function Home() {
                         className="swiper-slide d-flex swiper-slide-duplicate"
                         data-swiper-slide-index="0"
                       >
-                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                        <span
+                          style={{
+                            boxSizing: "border-box",
+                            display: "block",
+                            overflow: "hidden",
+                            width: "initial",
+                            height: "initial",
+                            background: "none",
+                            opacity: 1,
+                            border: 0,
+                            margin: 0,
+                            padding: 0,
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                          }}
+                        >
                           <img
                             alt="Image"
                             light="1"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                             decoding="async"
                             data-nimg="fill"
-                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;background-size:cover;background-position:0% 0%;filter:blur(20px);background-image:url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")'
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              right: 0,
+                              boxSizing: "border-box",
+                              padding: 0,
+                              border: "none",
+                              margin: "auto",
+                              display: "block",
+                              width: 0,
+                              height: 0,
+                              minWidth: "100%",
+                              maxWidth: "100%",
+                              minHeight: "100%",
+                              maxHeight: "100%",
+                              objectFit: "cover",
+                              backgroundSize: "cover",
+                              backgroundPosition: "0% 0%",
+                              filter: "blur(20px)",
+                              backgroundImage:
+                                'url("data:image/svg+xml;base64,CiAgICA8c3ZnIHdpZHRoPSJ1bmRlZmluZWQiIGhlaWdodD0idW5kZWZpbmVkIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciPgogICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1MmU0NCIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMWYxYjJkIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNTJlNDQiIG9mZnNldD0iNzAlIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9InVuZGVmaW5lZCIgaGVpZ2h0PSJ1bmRlZmluZWQiIGZpbGw9IiMzNTJlNDQiIC8+CiAgICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0idW5kZWZpbmVkIiBoZWlnaHQ9InVuZGVmaW5lZCIgZmlsbD0idXJsKCNnKSIgLz4KICAgICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii11bmRlZmluZWQiIHRvPSJ1bmRlZmluZWQiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9zdmc+")',
+                            }}
                           />
                           <noscript>
                             <img
                               alt="Image"
                               light="1"
                               sizes="100vw"
-                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100 3840w"
-                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F13.jpg&amp;w=3840&amp;q=100"
+                              srcSet="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=640&amp;q=100 640w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=750&amp;q=100 750w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=828&amp;q=100 828w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1080&amp;q=100 1080w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1200&amp;q=100 1200w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=2048&amp;q=100 2048w, /_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100 3840w"
+                              src="/_next/image?url=%2Fimages%2Fcar-finder%2Fcatalog%2F09.jpg&amp;w=3840&amp;q=100"
                               decoding="async"
                               data-nimg="fill"
-                              style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"
+                              style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                                boxSizing: "border-box",
+                                padding: 0,
+                                border: "none",
+                                margin: "auto",
+                                display: "block",
+                                width: 0,
+                                height: 0,
+                                minWidth: "100%",
+                                maxWidth: "100%",
+                                minHeight: "100%",
+                                maxHeight: "100%",
+                                objectFit: "cover",
+                              }}
                               loading="lazy"
                             />
                           </noscript>
