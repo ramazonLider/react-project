@@ -342,10 +342,8 @@
         noModule: "noModule",
       };
       function n(e) {
-        let { type: t, props: n } = e;
-        console.log("Creating element:", t);
-        let a = document.createElement(t);
-        console.log("Created element:", a);
+        let { type: t, props: n } = e,
+          a = document.createElement(t);
         for (let o in n) {
           if (
             !n.hasOwnProperty(o) ||
@@ -360,17 +358,15 @@
             : a.setAttribute(i, n[o]);
         }
         let { children: l, dangerouslySetInnerHTML: s } = n;
-        if (s) {
-          console.log("Setting innerHTML:", s.__html);
-          a.innerHTML = s.__html || "";
-        } else if (l) {
-          console.log("Setting textContent:", l);
-          a.textContent =
-            "string" == typeof l ? l : Array.isArray(l) ? l.join("") : "";
-        }
-        return a;
+        return (
+          s
+            ? (a.innerHTML = s.__html || "")
+            : l &&
+              (a.textContent =
+                "string" == typeof l ? l : Array.isArray(l) ? l.join("") : ""),
+          a
+        );
       }
-
       function a(e, t) {
         if (e instanceof HTMLElement && t instanceof HTMLElement) {
           let r = t.getAttribute("nonce");
@@ -491,36 +487,42 @@
       }
       function G() {
         return (G = g(function* () {
-          arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-
-          // Check if the element with ID "__NEXT_DATA__" exists before accessing its textContent
-          let nextDataElement = document.getElementById("__NEXT_DATA__");
-          if (!nextDataElement) {
-            console.error("Element with ID '__NEXT_DATA__' not found.");
-            return;
-          }
-
-          // Retrieve and parse the JSON content
-          let nextDataContent = nextDataElement.textContent;
-          let a;
-          try {
-            a = JSON.parse(nextDataContent);
-          } catch (error) {
-            console.error("Error parsing JSON:", error);
-            return;
-          }
-
-          // Proceed with the rest of the code
-          window.__NEXT_DATA__ = a;
-          h = a.defaultLocale;
+          arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+            (a = JSON.parse(
+              document.getElementById("__NEXT_DATA__").textContent
+            )),
+            (window.__NEXT_DATA__ = a),
+            (h = a.defaultLocale);
           let e = a.assetPrefix || "";
-          r.p = "".concat(e, "/_next/");
-          C.setConfig({
-            serverRuntimeConfig: {},
-            publicRuntimeConfig: a.runtimeConfig || {},
-          });
-
-          // The rest of the function...
+          if (
+            ((r.p = "".concat(e, "/_next/")),
+            C.setConfig({
+              serverRuntimeConfig: {},
+              publicRuntimeConfig: a.runtimeConfig || {},
+            }),
+            (o = j.getURL()),
+            D.hasBasePath(o) && (o = k.removeBasePath(o)),
+            a.scriptLoader)
+          ) {
+            let { initScriptLoader: t } = r(63573);
+            t(a.scriptLoader);
+          }
+          i = new M.default(a.buildId, e);
+          let u = (e) => {
+            let [t, r] = e;
+            return i.routeLoader.onEntrypoint(t, r);
+          };
+          return (
+            window.__NEXT_P &&
+              window.__NEXT_P.map((e) => setTimeout(() => u(e), 0)),
+            (window.__NEXT_P = []),
+            (window.__NEXT_P.push = u),
+            ((s = R.default()).getIsSsr = () => n.isSsr),
+            (l = document.getElementById("__next")),
+            {
+              assetPrefix: e,
+            }
+          );
         })).apply(this, arguments);
       }
       function V(e, t) {
@@ -573,7 +575,7 @@
                             640, 750, 828, 1080, 1200, 1920, 2048, 3840,
                           ],
                           imageSizes: [48, 64, 88, 96, 128, 256, 384, 416],
-                          path: "",
+                          path: "/_next/image",
                           loader: "default",
                           dangerouslyAllowSVG: !1,
                           unoptimized: !1,
@@ -596,79 +598,67 @@
         });
         return _.default.createElement(X, null, V(e, r));
       };
-      function $(e, i) {
-        // Accept 'i' as an argument to the function
+      function $(e) {
         let { App: t, err: l } = e;
         return (
           console.error(l),
           console.error(
             "A client-side exception has occurred, see here for more info: https://nextjs.org/docs/messages/client-side-exception-occurred"
           ),
-          // Check if 'i' is properly initialized
-          i && typeof i.loadPage === "function"
-            ? i
-                .loadPage("/_error")
-                .then((n) => {
-                  let { page: a, styleSheets: o } = n;
-                  return (null == u ? void 0 : u.Component) === a
-                    ? Promise.resolve()
-                        .then(() => m(r(97345)))
-                        .then((n) =>
-                          Promise.resolve()
-                            .then(() => m(r(74297)))
-                            .then((r) => ((t = r.default), (e.App = t), n))
-                        )
-                        .then((e) => ({
-                          ErrorComponent: e.default,
-                          styleSheets: [],
-                        }))
-                    : {
-                        ErrorComponent: a,
-                        styleSheets: o,
-                      };
-                })
-                .then((r) => {
-                  var i;
-                  let { ErrorComponent: s, styleSheets: u } = r,
-                    c = Y(t),
-                    d = {
-                      Component: s,
-                      AppTree: c,
-                      router: n,
-                      ctx: {
-                        err: l,
-                        pathname: a.page,
-                        query: a.query,
-                        asPath: o,
-                        AppTree: c,
-                      },
-                    };
-                  return Promise.resolve(
-                    (null == (i = e.props) ? void 0 : i.err)
-                      ? e.props
-                      : j.loadGetInitialProps(t, d)
-                  ).then((t) =>
-                    ea(
-                      y({}, e, {
-                        err: l,
-                        Component: s,
-                        styleSheets: u,
-                        props: t,
-                      })
+          i
+            .loadPage("/_error")
+            .then((n) => {
+              let { page: a, styleSheets: o } = n;
+              return (null == u ? void 0 : u.Component) === a
+                ? Promise.resolve()
+                    .then(() => m(r(97345)))
+                    .then((n) =>
+                      Promise.resolve()
+                        .then(() => m(r(74297)))
+                        .then((r) => ((t = r.default), (e.App = t), n))
                     )
-                  );
-                })
-            : Promise.reject(
-                new Error("Object 'i' is not properly initialized.")
-              )
+                    .then((e) => ({
+                      ErrorComponent: e.default,
+                      styleSheets: [],
+                    }))
+                : {
+                    ErrorComponent: a,
+                    styleSheets: o,
+                  };
+            })
+            .then((r) => {
+              var i;
+              let { ErrorComponent: s, styleSheets: u } = r,
+                c = Y(t),
+                d = {
+                  Component: s,
+                  AppTree: c,
+                  router: n,
+                  ctx: {
+                    err: l,
+                    pathname: a.page,
+                    query: a.query,
+                    asPath: o,
+                    AppTree: c,
+                  },
+                };
+              return Promise.resolve(
+                (null == (i = e.props) ? void 0 : i.err)
+                  ? e.props
+                  : j.loadGetInitialProps(t, d)
+              ).then((t) =>
+                ea(
+                  y({}, e, {
+                    err: l,
+                    Component: s,
+                    styleSheets: u,
+                    props: t,
+                  })
+                )
+              );
+            })
         );
       }
-      if (i && typeof i.loadPage === "function") {
-        $(e, i);
-      } else {
-        console.error("Object 'i' is not properly initialized.");
-      }
-
       function K(e) {
         let { callback: t } = e;
         return _.default.useLayoutEffect(() => t(), [t]), null;
@@ -870,62 +860,84 @@
           }
         })).apply(this, arguments);
       }
-      function el(a) {
+      function el() {
         return (el = g(function* (e) {
-          let r = a && a.err;
+          let r = a.err;
           try {
-            // Check if 'a' is defined and has the 'props' property
-            if (!a || !a.props) {
-              throw new Error(
-                "Argument 'a' must be defined and have a 'props' property."
-              );
-            }
-
-            // Rest of your code...
+            let l = yield i.routeLoader.whenEntrypoint("/_app");
+            if ("error" in l) throw l.error;
+            let { component: s, exports: u } = l;
+            (d = s),
+              u &&
+                u.reportWebVitals &&
+                (f = (e) => {
+                  let t,
+                    {
+                      id: r,
+                      name: n,
+                      startTime: a,
+                      value: o,
+                      duration: i,
+                      entryType: l,
+                      entries: s,
+                      attribution: c,
+                    } = e,
+                    d = ""
+                      .concat(Date.now(), "-")
+                      .concat(Math.floor(Math.random() * (9e12 - 1)) + 1e12);
+                  s && s.length && (t = s[0].startTime);
+                  let f = {
+                    id: r || d,
+                    name: n,
+                    startTime: a || t,
+                    value: null == o ? i : o,
+                    label:
+                      "mark" === l || "measure" === l ? "custom" : "web-vital",
+                  };
+                  c && (f.attribution = c), u.reportWebVitals(f);
+                });
+            let c = yield i.routeLoader.whenEntrypoint(a.page);
+            if ("error" in c) throw c.error;
+            p = c.component;
           } catch (m) {
             r = I.getProperError(m);
           }
           window.__NEXT_PRELOADREADY &&
             (yield window.__NEXT_PRELOADREADY(a.dynamicIds)),
-            // Ensure 'a' and its 'props' property are defined before accessing them
-            a &&
-              a.props &&
-              (t.router = n =
-                T.createRouter(a.page, a.query, o, {
-                  initialProps: a.props,
-                  pageLoader: i,
-                  App: d,
-                  Component: p,
-                  wrapApp: Y,
-                  err: r,
-                  isFallback: Boolean(a.isFallback),
-                  subscription: (e, t, r) =>
-                    eo(
-                      Object.assign({}, e, {
-                        App: t,
-                        scroll: r,
-                      })
-                    ),
-                  locale: a.locale,
-                  locales: a.locales,
-                  defaultLocale: h,
-                  domainLocales: a.domainLocales,
-                  isPreview: a.isPreview,
-                })),
-            // Ensure 'n' is defined before accessing _initialMatchesMiddlewarePromise
-            n && (Z = yield n._initialMatchesMiddlewarePromise);
+            (t.router = n =
+              T.createRouter(a.page, a.query, o, {
+                initialProps: a.props,
+                pageLoader: i,
+                App: d,
+                Component: p,
+                wrapApp: Y,
+                err: r,
+                isFallback: Boolean(a.isFallback),
+                subscription: (e, t, r) =>
+                  eo(
+                    Object.assign({}, e, {
+                      App: t,
+                      scroll: r,
+                    })
+                  ),
+                locale: a.locale,
+                locales: a.locales,
+                defaultLocale: h,
+                domainLocales: a.domainLocales,
+                isPreview: a.isPreview,
+              })),
+            (Z = yield n._initialMatchesMiddlewarePromise);
           let g = {
             App: d,
             initial: !0,
             Component: p,
-            props: a && a.props, // Add a null check here
+            props: a.props,
             err: r,
           };
           (null == e ? void 0 : e.beforeRender) && (yield e.beforeRender()),
             eo(g);
         })).apply(this, arguments);
       }
-
       ("function" == typeof t.default ||
         ("object" == typeof t.default && null !== t.default)) &&
         void 0 === t.default.__esModule &&
@@ -1388,34 +1400,46 @@
                   : (r ? t.set(e, r) : t.delete(e), i.delete(e));
               });
             },
-            // loadRoute(r, n) {
-            //     return o(r, i, ()=>{
-            //         let a;
-            //         return u(d(e, r).then(e=>{
-            //             let {scripts: n, css: a} = e;
-            //             return Promise.all([t.has(r) ? [] : Promise.all(n.map(c)), Promise.all(a.map(f))])
-            //         }
-            //         ).then(e=>this.whenEntrypoint(r).then(t=>({
-            //             entrypoint: t,
-            //             styles: e[1]
-            //         }))), 3800, l(Error("Route did not complete loading: ".concat(r)))).then(e=>{
-            //             let {entrypoint: t, styles: r} = e
-            //               , n = Object.assign({
-            //                 styles: r
-            //             }, t);
-            //             return "error"in t ? t : n
-            //         }
-            //         ).catch(e=>{
-            //             if (n)
-            //                 throw e;
-            //             return {
-            //                 error: e
-            //             }
-            //         }
-            //         ).finally(()=>null == a ? void 0 : a())
-            //     }
-            //     )
-            // },
+            loadRoute(r, n) {
+              return o(r, i, () => {
+                let a;
+                return u(
+                  d(e, r)
+                    .then((e) => {
+                      let { scripts: n, css: a } = e;
+                      return Promise.all([
+                        t.has(r) ? [] : Promise.all(n.map(c)),
+                        Promise.all(a.map(f)),
+                      ]);
+                    })
+                    .then((e) =>
+                      this.whenEntrypoint(r).then((t) => ({
+                        entrypoint: t,
+                        styles: e[1],
+                      }))
+                    ),
+                  3800,
+                  l(Error("Route did not complete loading: ".concat(r)))
+                )
+                  .then((e) => {
+                    let { entrypoint: t, styles: r } = e,
+                      n = Object.assign(
+                        {
+                          styles: r,
+                        },
+                        t
+                      );
+                    return "error" in t ? t : n;
+                  })
+                  .catch((e) => {
+                    if (n) throw e;
+                    return {
+                      error: e,
+                    };
+                  })
+                  .finally(() => (null == a ? void 0 : a()));
+              });
+            },
             prefetch(t) {
               let r;
               return (r = navigator.connection) &&
@@ -2469,7 +2493,7 @@
         (t.imageConfigDefault = {
           deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-          path: "",
+          path: "/_next/image",
           loader: "default",
           loaderFile: "",
           domains: [],

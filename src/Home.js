@@ -1,4 +1,6 @@
 import "./App.css";
+import "./index.css";
+import "./css.css";
 
 function Home() {
   return (
